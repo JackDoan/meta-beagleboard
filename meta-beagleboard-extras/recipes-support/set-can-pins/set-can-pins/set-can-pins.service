@@ -1,0 +1,11 @@
+[Unit]
+Description=Set CAN buffer GPIO enables
+
+[Service]
+RemainAfterExit=yes
+Type=oneshot
+ExecStart=/usr/bin/set-can-pins.sh start
+ExecStop=/usr/bin/set-can-pins.sh stop
+
+[Install]
+WantedBy=network.target
