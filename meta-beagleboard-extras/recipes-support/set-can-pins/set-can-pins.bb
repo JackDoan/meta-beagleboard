@@ -2,6 +2,7 @@ DESCRIPTION = "Units to initialize CAN buffer pins"
 
 inherit systemd
 
+LICENSE = ""
 COMPATIBLE_MACHINE = "(beaglebone)"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
